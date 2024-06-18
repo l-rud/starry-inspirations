@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+
 function HomePage() {
   return (
     <div className="container">
-      <div className="item">Aries</div>
-      <div className="item">Taurus</div>
-      <div className="item">Gemini</div>
-      <div className="item">Cancer</div>
-      <div className="item">Leo</div>
-      <div className="item">Virgo</div>
+      <div className="item"><Link to={"/horoscope?sign=Aries"}>Aries</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Taurus"}>Taurus</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Gemini"}>Gemini</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Cancer"}>Cancer</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Leo"}>Leo</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Virgo"}>Virgo</Link></div>
 
 
-      <div className="item">Libra</div>
-      <div className="item">Scorpio</div>
-      <div className="item">Sagittarius</div>
-      <div className="item">Capricornus</div>
-      <div className="item">Aquarius</div>
-      <div className="item">Pisces</div>
-      </div>
+      <div className="item"><Link to={"/horoscope?sign=Libra"}>Libra</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Scorpio"}>Scorpio</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Sagittarius"}>Sagittarius</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Capricornus"}>Capricornus</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Aquarius"}>Aquarius</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Pisces"}>Pisces</Link></div>
+    </div>
   );
 }
 
