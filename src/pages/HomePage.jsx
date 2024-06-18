@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div className="container">
-      <div className="item"><Link to={"/horoscope?sign=Aries"}>Aries</Link></div>
+      <div className="item"><Link to={"/horoscope?sign=Aries"}>Aries </Link></div>
       <div className="item"><Link to={"/horoscope?sign=Taurus"}>Taurus</Link></div>
       <div className="item"><Link to={"/horoscope?sign=Gemini"}>Gemini</Link></div>
       <div className="item"><Link to={"/horoscope?sign=Cancer"}>Cancer</Link></div>

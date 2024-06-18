@@ -9,14 +9,25 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  gap: 25px;
 }
 
 .item {
   background-color: lightblue;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
+  border-radius: 6px;
+  font-size: large;
+}
+
+h1 {
+  color: white;
+}
+
+div.horoscope-container > a {
+  color: rgb(129, 174, 175);
+  font-size: x-large;
 }
