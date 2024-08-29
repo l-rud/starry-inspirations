@@ -9,13 +9,12 @@ function Horoscope() {
     const [horoscope, setHoroscope] = useState(null);
 
     const getHoroscope = async (searchTerm) => {
-        fetch("https://type.fit/api/quotes")
+        fetch("https://api.quotable.io/random")
         .then(function(response) {
           return response.json();
         })
         .then(function(data) {
-          const randomItem = data[Math.floor(Math.random() * data.length)];
-          setHoroscope({"text": randomItem.text})
+          setHoroscope({"text": data.content})
         });
     };
 
