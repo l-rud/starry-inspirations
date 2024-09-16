@@ -9,7 +9,8 @@ function Horoscope() {
     const [horoscope, setHoroscope] = useState(null);
 
     const getHoroscope = async (searchTerm) => {
-        fetch("https://api.quotable.io/random")
+        const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+        fetch(`${import.meta.env.VITE_apiBaseUrl}`)
         .then(function(response) {
           return response.json();
         })

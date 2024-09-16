@@ -23,9 +23,7 @@ Users can select a randomly generated inspirational quote tailored to their zodi
 
  However, during the app development, attempts to fetch data from  horoscope [URL](https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=sagittarius&day=TODAY) resulted in a CORS error that could not be resolved.    
            
- As a solution, the decision was made to utilize inspirational quotes instead of daily horoscopes. The application currently fetches data from the [Quotable](https://github.com/lukePeavey/quotable) - free, open source quotations API.             
-       
-This approach allowed the application to continue providing meaningful content despite the initial technical challenge encountered with the original horoscope API.           
+ As a solution, the decision was made to utilize inspirational quotes instead of daily horoscopes and use [quotes API](https://github.com/l-rud/quotes-api). This approach allowed the application to continue providing meaningful content despite the initial technical challenge encountered with the original horoscope API.           
             
           
            
