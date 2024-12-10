@@ -10,6 +10,8 @@ function Horoscope() {
 
     const getHoroscope = async (searchTerm) => {
         const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+        // Set the cursor to 'progress' before the fetch request, indicating loading
+        document.body.style.cursor = "progress";
         fetch(`${import.meta.env.VITE_apiBaseUrl}`)
         .then(function(response) {
           return response.json();
