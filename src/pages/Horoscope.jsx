@@ -17,7 +17,10 @@ function Horoscope() {
           return response.json();
         })
         .then(function(data) {
-          setHoroscope({"text": data.content})
+          setHoroscope({"text": data.content});
+        })
+        .catch(function(error) {
+            console.error('Error fetching horoscope:', error);
         })
         .finally(() => {
             // Reset the cursor to 'default' after the fetch completes
