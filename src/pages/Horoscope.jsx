@@ -18,6 +18,10 @@ function Horoscope() {
         })
         .then(function(data) {
           setHoroscope({"text": data.content})
+        })
+        .finally(() => {
+            // Reset the cursor to 'default' after the fetch completes
+            document.body.style.cursor = "default";
         });
     };
 
